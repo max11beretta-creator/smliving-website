@@ -47,7 +47,7 @@ function Home() {
             />
             <div className="project-content">
               <h3>Residenza Lilium Living</h3>
-              <p>6 unità esclusive a Bellusco. Residenze di prestigio immerse nel verde, con finiture di alta qualità.</p>
+              <p>6 quadrilocali esclusivi a Bellusco. Residenze di prestigio da 134 a 160 mq, immerse nel verde con giardini fino a 150 mq e finiture di alta qualità.</p>
               <div className="project-details">
                 <div className="detail-item">
                   <span>📍</span>
@@ -58,17 +58,13 @@ function Home() {
                   <span>6 unità</span>
                 </div>
                 <div className="detail-item">
+                  <span>📐</span>
+                  <span>134-160 mq</span>
+                </div>
+                <div className="detail-item">
                   <span>⏳</span>
                   <span>Inizio: Feb 2026</span>
                 </div>
               </div>
             </div>
           </Link>
-
-        </div>
-      </section>
-    </div>
-  );
-}
-
-export default Home;
