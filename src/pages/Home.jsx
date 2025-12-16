@@ -4,15 +4,19 @@ function Home() {
   return (
     <div className="home">
       <section className="hero">
-        <h1>SM Living</h1>
-        <p>Sviluppo immobiliare di qualità in Brianza. Residenze esclusive dove design, comfort e sostenibilità si incontrano.</p>
-        <Link to="/contatti" className="cta-button">Richiedi Informazioni</Link>
+        <div className="hero-content">
+          <h1>SM Living</h1>
+          <p>Sviluppo Immobiliare di Qualità in Brianza</p>
+          <p className="hero-subtitle">
+            Realizziamo progetti residenziali innovativi ed efficienti, 
+            con particolare attenzione alla sostenibilità e al comfort abitativo.
+          </p>
+        </div>
       </section>
 
-      <section className="projects-section">
-        <h2 className="section-title">I Nostri Progetti</h2>
+      <section className="projects">
+        <h2>I Nostri Progetti</h2>
         <div className="projects-grid">
-          
           <Link to="/excelsior-living" className="project-card">
             <img 
               src="/images/excelsior-exterior.jpg" 
@@ -21,7 +25,7 @@ function Home() {
             />
             <div className="project-content">
               <h3>Residenza Excelsior Living</h3>
-              <p>24 unità abitative di design ad Agrate Brianza. Modernità, eleganza e sostenibilità in una posizione strategica.</p>
+              <p>24 unità abitative moderne ad Agrate Brianza. Trilocali da 108 a 117 mq e Quadrilocali da 122 a 138 mq con finiture di pregio e classe energetica A4.</p>
               <div className="project-details">
                 <div className="detail-item">
                   <span>📍</span>
@@ -30,6 +34,10 @@ function Home() {
                 <div className="detail-item">
                   <span>🏢</span>
                   <span>24 unità</span>
+                </div>
+                <div className="detail-item">
+                  <span>📐</span>
+                  <span>108-138 mq</span>
                 </div>
                 <div className="detail-item">
                   <span>⏳</span>
@@ -68,3 +76,21 @@ function Home() {
               </div>
             </div>
           </Link>
+        </div>
+      </section>
+
+      <section className="about-preview">
+        <h2>Chi Siamo</h2>
+        <p>
+          SM Living - Santa Marta S.r.l. è specializzata nello sviluppo di progetti 
+          immobiliari residenziali di alta qualità in Brianza. Con attenzione ai 
+          dettagli e all'efficienza energetica, realizziamo abitazioni che combinano 
+          comfort, design e sostenibilità.
+        </p>
+        <Link to="/chi-siamo" className="cta-button">Scopri di più</Link>
+      </section>
+    </div>
+  );
+}
+
+export default Home;"Fix closing div tag in Home.jsx"
