@@ -1,4 +1,4 @@
-1. function LiliumLiving() {
+function LiliumLiving() {
   return (
     <div className="project-detail">
       <section className="project-hero">
@@ -183,4 +183,4 @@
   );
 }
 
-export default LiliumLiving;"Update Lilium Living with floor plans and complete info"
+export default LiliumLiving;
