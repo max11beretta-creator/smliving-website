@@ -250,4 +250,4 @@ function ExcelsiorLiving() {
   );
 }
 
-export default ExcelsiorLiving;"Update Excelsior Living with floor plans A01-A12"
+export default ExcelsiorLiving;"Update Excelsior Living with new design"
