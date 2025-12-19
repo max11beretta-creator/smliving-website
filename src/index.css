@@ -876,3 +876,73 @@ footer {
 .mt-1 { margin-top: 1rem; }
 .mt-2 { margin-top: 2rem; }
 .mt-3 { margin-top: 3rem; }
+
+/* ==================== LOGO STYLING ==================== */
+
+/* Logo Container Header */
+.logo-container {
+  text-align: center;
+  padding: 2rem 0;
+  background: var(--white);
+}
+
+.logo-container a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logo-container img {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Project Hero Logo */
+.project-hero img {
+  max-width: 250px;
+  height: auto;
+  margin: 0 auto 2rem;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.project-hero img:hover {
+  opacity: 0.9;
+}
+
+/* Logo Responsive Sizes */
+@media (max-width: 768px) {
+  .logo-container {
+    padding: 1.5rem 0;
+  }
+  
+  .logo-container img {
+    max-width: 150px;
+  }
+  
+  .project-hero img {
+    max-width: 180px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    padding: 1rem 0;
+  }
+  
+  .logo-container img {
+    max-width: 120px;
+  }
+  
+  .project-hero img {
+    max-width: 150px;
+    margin-bottom: 1rem;
+  }
+}
