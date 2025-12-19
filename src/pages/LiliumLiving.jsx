@@ -1,8 +1,18 @@
 function LiliumLiving() {
   return (
     <div className="project-detail">
-      {/* Hero */}
+      {/* Hero with Logo */}
       <section className="project-hero">
+        <img 
+          src="/images/logos/lilium-logo.png" 
+          alt="Lilium Living - Comfort e luce" 
+          style={{
+            maxWidth: '250px',
+            height: 'auto',
+            margin: '0 auto 2rem',
+            display: 'block'
+          }}
+        />
         <h1>RESIDENZA LILIUM LIVING</h1>
         <p>Bellusco - 6 Quadrilocali Esclusivi da 134 a 160 mq</p>
       </section>
@@ -221,4 +231,4 @@ function LiliumLiving() {
   );
 }
 
-export default LiliumLiving;"Update Lilium Living with new design and brochure"
+export default LiliumLiving;"Update Lilium with logo and new design"
