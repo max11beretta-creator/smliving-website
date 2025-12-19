@@ -1,8 +1,19 @@
 function ExcelsiorLiving() {
   return (
     <div className="project-detail">
+      {/* Hero with Logo */}
       <section className="project-hero">
-        <h1>Residenza Excelsior Living</h1>
+        <img 
+          src="/images/logos/excelsior-logo.png" 
+          alt="Excelsior Living - Emozione e modernità" 
+          style={{
+            maxWidth: '250px',
+            height: 'auto',
+            margin: '0 auto 2rem',
+            display: 'block'
+          }}
+        />
+        <h1>RESIDENZA EXCELSIOR LIVING</h1>
         <p>Agrate Brianza - 24 Appartamenti Moderni • Trilocali 108-117 mq • Quadrilocali 122-138 mq</p>
       </section>
 
@@ -27,7 +38,11 @@ function ExcelsiorLiving() {
         </div>
 
         <section className="description-section">
-          <h2>Il Progetto</h2>
+          <span className="label-category">IL PROGETTO</span>
+          <h2 className="title-gold">
+            Emozione e modernità per un nuovo standard di vita.
+          </h2>
+          
           <p>
             Residenza Excelsior Living rappresenta un nuovo standard di vita ad Agrate Brianza. 
             24 appartamenti esclusivi in Classe A4 distribuiti su due eleganti palazzine, 
@@ -39,193 +54,207 @@ function ExcelsiorLiving() {
             tranquillità residenziale e collegamenti urbani.
           </p>
           
-          <h3 style={{marginTop: '2rem', marginBottom: '1rem'}}>Le Tipologie</h3>
+          <h3 style={{marginTop: '3rem', marginBottom: '1.5rem', fontFamily: 'var(--font-sans)', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '1rem'}}>
+            Le Tipologie
+          </h3>
           
-          <div style={{background: '#f8f9fa', padding: '1.5rem', borderRadius: '10px', marginBottom: '1.5rem'}}>
-            <p><strong style={{color: '#2C5F7E'}}>Quadrilocali Piano Terra</strong> - 138 mq</p>
-            <p style={{marginLeft: '1rem'}}>• Living 35 mq • 3 camere • Doppi servizi • GIARDINO PRIVATO • Box doppio</p>
-            <p style={{marginLeft: '1rem', marginTop: '0.5rem', color: '#2C5F7E', fontWeight: 'bold'}}>
-              Prezzo: Su richiesta
-            </p>
+          <div className="overlay-box" style={{textAlign: 'left', marginBottom: '1.5rem'}}>
+            <span className="label-category">QUADRILOCALI PIANO TERRA</span>
+            <p style={{marginBottom: '0.5rem'}}><strong style={{color: 'var(--gold-elegant)'}}>138 mq</strong></p>
+            <p style={{marginLeft: '1rem', fontSize: '0.95rem'}}>• Living 35 mq • 3 camere • Doppi servizi • Giardino privato • Box doppio</p>
+          </div>
+
+          <div className="overlay-box" style={{textAlign: 'left', marginBottom: '1.5rem'}}>
+            <span className="label-category">TRILOCALI</span>
+            <p style={{marginBottom: '0.5rem'}}><strong style={{color: 'var(--gold-elegant)'}}>108-117 mq</strong></p>
+            <p style={{marginLeft: '1rem', fontSize: '0.95rem'}}>• Living ampio • 2 camere • Balconi loggiati • Box incluso</p>
+          </div>
+
+          <div className="overlay-box" style={{textAlign: 'left'}}>
+            <span className="label-category">QUADRILOCALI</span>
+            <p style={{marginBottom: '0.5rem'}}><strong style={{color: 'var(--gold-elegant)'}}>122-138 mq</strong></p>
+            <p style={{marginLeft: '1rem', fontSize: '0.95rem'}}>• Living 30-35 mq • 3 camere • Doppi servizi • Terrazzi • Box doppio</p>
           </div>
           
-          <div style={{background: '#f8f9fa', padding: '1.5rem', borderRadius: '10px', marginBottom: '1.5rem'}}>
-            <p><strong style={{color: '#2C5F7E'}}>Trilocali Piano Primo</strong> - 113-117 mq</p>
-            <p style={{marginLeft: '1rem'}}>• Living 30-32 mq • 2 camere • Doppi servizi • Terrazzi panoramici</p>
-            <p style={{marginLeft: '1rem', marginTop: '0.5rem', color: '#2C5F7E', fontWeight: 'bold'}}>
-              Prezzo: Su richiesta
-            </p>
-          </div>
+          <h3 style={{marginTop: '3rem', marginBottom: '1.5rem', fontFamily: 'var(--font-sans)', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '1rem'}}>
+            Caratteristiche Principali
+          </h3>
           
-          <div style={{background: '#f8f9fa', padding: '1.5rem', borderRadius: '10px', marginBottom: '1.5rem'}}>
-            <p><strong style={{color: '#2C5F7E'}}>Quadrilocali Piano Primo</strong> - 122-129 mq</p>
-            <p style={{marginLeft: '1rem'}}>• Living 32-35 mq • 3 camere • Doppi servizi • Terrazzi panoramici</p>
-            <p style={{marginLeft: '1rem', marginTop: '0.5rem', color: '#2C5F7E', fontWeight: 'bold'}}>
-              Prezzo: Su richiesta
-            </p>
-          </div>
-          
-          <div style={{background: '#f8f9fa', padding: '1.5rem', borderRadius: '10px', marginBottom: '1.5rem'}}>
-            <p><strong style={{color: '#2C5F7E'}}>Trilocali Piano Secondo</strong> - 108 mq</p>
-            <p style={{marginLeft: '1rem'}}>• Living 28 mq • 2 camere • Doppi servizi • Terrazzi con vista</p>
-            <p style={{marginLeft: '1rem', marginTop: '0.5rem', color: '#2C5F7E', fontWeight: 'bold'}}>
-              Prezzo: Su richiesta
-            </p>
-          </div>
-          
-          <div style={{background: '#f8f9fa', padding: '1.5rem', borderRadius: '10px'}}>
-            <p><strong style={{color: '#2C5F7E'}}>Quadrilocali Piano Secondo</strong> - 122-129 mq</p>
-            <p style={{marginLeft: '1rem'}}>• Living 32-35 mq • 3 camere • Doppi servizi • Terrazzi panoramici</p>
-            <p style={{marginLeft: '1rem', marginTop: '0.5rem', color: '#2C5F7E', fontWeight: 'bold'}}>
-              Prezzo: Su richiesta
-            </p>
-          </div>
-          
-          <h3 style={{marginTop: '2rem', marginBottom: '1rem'}}>Caratteristiche Principali</h3>
           <div className="features-grid">
             <div className="feature-item">
-              <span className="feature-icon">🏢</span>
-              <span>24 unità abitative</span>
+              <span className="feature-icon">🏙️</span>
+              <span>A 5 minuti da Metro M2</span>
             </div>
             <div className="feature-item">
               <span className="feature-icon">🌱</span>
               <span>Classe energetica A4</span>
             </div>
             <div className="feature-item">
-              <span className="feature-icon">🏡</span>
-              <span>Metrature da 108 a 138 mq</span>
+              <span className="feature-icon">💰</span>
+              <span>Sismabonus fino €48.000</span>
             </div>
             <div className="feature-item">
-              <span className="feature-icon">🚇</span>
-              <span>Metro M2 a 5 minuti</span>
+              <span className="feature-icon">🏢</span>
+              <span>24 unità esclusive</span>
             </div>
             <div className="feature-item">
-              <span className="feature-icon">🌳</span>
-              <span>Giardini privati PT</span>
-            </div>
-            <div className="feature-item">
-              <span className="feature-icon">💎</span>
-              <span>Finiture personalizzabili</span>
+              <span className="feature-icon">📐</span>
+              <span>Metrature generose</span>
             </div>
             <div className="feature-item">
               <span className="feature-icon">🚗</span>
               <span>Box auto incluso</span>
             </div>
             <div className="feature-item">
-              <span className="feature-icon">💰</span>
-              <span>Sismabonus €48.000</span>
+              <span className="feature-icon">🏡</span>
+              <span>Giardini privati PT</span>
             </div>
+            <div className="feature-item">
+              <span className="feature-icon">💎</span>
+              <span>Finiture di pregio</span>
+            </div>
+          </div>
+
+          <div style={{background: 'var(--bg-cream)', padding: '2rem', borderRadius: '8px', marginTop: '3rem'}}>
+            <h3 style={{color: 'var(--teal-dark)', marginBottom: '1rem'}}>
+              💰 Sismabonus 80% - Risparmio fino a €48.000
+            </h3>
+            <p>
+              Grazie al <strong>Sismabonus 80%</strong>, puoi beneficiare di una detrazione fiscale 
+              eccezionale fino a €48.000 per l'acquisto del tuo appartamento in Residenza Excelsior Living.
+            </p>
+            <p style={{marginTop: '1rem'}}>
+              Un'opportunità unica per investire in un immobile di nuova costruzione con un risparmio 
+              significativo e la massima sicurezza antisismica.
+            </p>
           </div>
         </section>
 
+        {/* Download Brochure */}
+        <div className="download-section">
+          <h3>Scarica la Brochure Completa</h3>
+          <p>Tutte le informazioni dettagliate su Residenza Excelsior Living</p>
+          <a href="/brochures/excelsior-living.pdf" className="download-button" download>
+            📥 SCARICA BROCHURE PDF
+          </a>
+        </div>
+
+        {/* Gallery Section */}
         <section className="gallery-section">
-          <h2>Planimetrie Appartamenti</h2>
-          <p style={{marginBottom: '2rem', color: '#666', textAlign: 'center'}}>
-            24 unità abitative • Trilocali e Quadrilocali • Metrature generose
+          <span className="label-category">PLANIMETRIE</span>
+          <h2 style={{textAlign: 'center', marginTop: '1rem'}}>Planimetrie Appartamenti</h2>
+          <p style={{textAlign: 'center', color: 'var(--text-gray)', marginBottom: '3rem', fontSize: '1.05rem'}}>
+            24 unità • Trilocali 108-117 mq • Quadrilocali 122-138 mq
           </p>
           
-          {/* PIANO TERRA - A01-A04 */}
           <div style={{marginBottom: '3rem'}}>
-            <h3 style={{color: '#2C5F7E', marginBottom: '1.5rem'}}>Piano Terra - Quadrilocali 138 mq con Giardino</h3>
+            <h3 style={{color: 'var(--gold-elegant)', marginBottom: '1.5rem', textAlign: 'center'}}>
+              Piano Terra - Quadrilocali con Giardino
+            </h3>
             <div className="gallery-grid">
               <div className="gallery-item">
-                <img src="/images/excelsior-a01.jpg" alt="Appartamento A01 - Piano Terra 138 mq" />
-                <p style={{textAlign: 'center', marginTop: '0.5rem', fontWeight: 'bold', color: '#2C5F7E'}}>
-                  A01 - Piano Terra - 138 mq
-                </p>
+                <img src="/images/excelsior-a01.jpg" alt="Appartamento A01 - Piano Terra" />
+                <p>A01 - Piano Terra - 138 mq</p>
               </div>
               <div className="gallery-item">
-                <img src="/images/excelsior-a02.jpg" alt="Appartamento A02 - Piano Terra 138 mq" />
-                <p style={{textAlign: 'center', marginTop: '0.5rem', fontWeight: 'bold', color: '#2C5F7E'}}>
-                  A02 - Piano Terra - 138 mq
-                </p>
+                <img src="/images/excelsior-a02.jpg" alt="Appartamento A02 - Piano Terra" />
+                <p>A02 - Piano Terra - 138 mq</p>
               </div>
               <div className="gallery-item">
-                <img src="/images/excelsior-a03.jpg" alt="Appartamento A03 - Piano Terra 138 mq" />
-                <p style={{textAlign: 'center', marginTop: '0.5rem', fontWeight: 'bold', color: '#2C5F7E'}}>
-                  A03 - Piano Terra - 138 mq
-                </p>
+                <img src="/images/excelsior-a03.jpg" alt="Appartamento A03 - Piano Terra" />
+                <p>A03 - Piano Terra - 122 mq</p>
               </div>
               <div className="gallery-item">
-                <img src="/images/excelsior-a04.jpg" alt="Appartamento A04 - Piano Terra 138 mq" />
-                <p style={{textAlign: 'center', marginTop: '0.5rem', fontWeight: 'bold', color: '#2C5F7E'}}>
-                  A04 - Piano Terra - 138 mq
-                </p>
+                <img src="/images/excelsior-a04.jpg" alt="Appartamento A04 - Piano Terra" />
+                <p>A04 - Piano Terra - 122 mq</p>
               </div>
             </div>
           </div>
 
-          {/* PIANO PRIMO - A05-A08 */}
           <div style={{marginBottom: '3rem'}}>
-            <h3 style={{color: '#2C5F7E', marginBottom: '1.5rem'}}>Piano Primo - Trilocali e Quadrilocali</h3>
+            <h3 style={{color: 'var(--gold-elegant)', marginBottom: '1.5rem', textAlign: 'center'}}>
+              Piano Primo - Trilocali e Quadrilocali
+            </h3>
             <div className="gallery-grid">
               <div className="gallery-item">
                 <img src="/images/excelsior-a05.jpg" alt="Appartamento A05 - Piano Primo" />
-                <p style={{textAlign: 'center', marginTop: '0.5rem', fontWeight: 'bold', color: '#2C5F7E'}}>
-                  A05 - Piano Primo
-                </p>
+                <p>A05 - Piano Primo - 117 mq</p>
               </div>
               <div className="gallery-item">
                 <img src="/images/excelsior-a06.jpg" alt="Appartamento A06 - Piano Primo" />
-                <p style={{textAlign: 'center', marginTop: '0.5rem', fontWeight: 'bold', color: '#2C5F7E'}}>
-                  A06 - Piano Primo
-                </p>
+                <p>A06 - Piano Primo - 108 mq</p>
               </div>
               <div className="gallery-item">
                 <img src="/images/excelsior-a07.jpg" alt="Appartamento A07 - Piano Primo" />
-                <p style={{textAlign: 'center', marginTop: '0.5rem', fontWeight: 'bold', color: '#2C5F7E'}}>
-                  A07 - Piano Primo
-                </p>
+                <p>A07 - Piano Primo - 122 mq</p>
               </div>
               <div className="gallery-item">
                 <img src="/images/excelsior-a08.jpg" alt="Appartamento A08 - Piano Primo" />
-                <p style={{textAlign: 'center', marginTop: '0.5rem', fontWeight: 'bold', color: '#2C5F7E'}}>
-                  A08 - Piano Primo
-                </p>
+                <p>A08 - Piano Primo - 122 mq</p>
               </div>
             </div>
           </div>
 
-          {/* PIANO SECONDO - A09-A12 */}
           <div>
-            <h3 style={{color: '#2C5F7E', marginBottom: '1.5rem'}}>Piano Secondo - Trilocali e Quadrilocali</h3>
+            <h3 style={{color: 'var(--gold-elegant)', marginBottom: '1.5rem', textAlign: 'center'}}>
+              Piano Secondo - Trilocali e Quadrilocali
+            </h3>
             <div className="gallery-grid">
               <div className="gallery-item">
                 <img src="/images/excelsior-a09.jpg" alt="Appartamento A09 - Piano Secondo" />
-                <p style={{textAlign: 'center', marginTop: '0.5rem', fontWeight: 'bold', color: '#2C5F7E'}}>
-                  A09 - Piano Secondo
-                </p>
+                <p>A09 - Piano Secondo - 117 mq</p>
               </div>
               <div className="gallery-item">
                 <img src="/images/excelsior-a10.jpg" alt="Appartamento A10 - Piano Secondo" />
-                <p style={{textAlign: 'center', marginTop: '0.5rem', fontWeight: 'bold', color: '#2C5F7E'}}>
-                  A10 - Piano Secondo
-                </p>
+                <p>A10 - Piano Secondo - 108 mq</p>
               </div>
               <div className="gallery-item">
                 <img src="/images/excelsior-a11.jpg" alt="Appartamento A11 - Piano Secondo" />
-                <p style={{textAlign: 'center', marginTop: '0.5rem', fontWeight: 'bold', color: '#2C5F7E'}}>
-                  A11 - Piano Secondo
-                </p>
+                <p>A11 - Piano Secondo - 122 mq</p>
               </div>
               <div className="gallery-item">
                 <img src="/images/excelsior-a12.jpg" alt="Appartamento A12 - Piano Secondo" />
-                <p style={{textAlign: 'center', marginTop: '0.5rem', fontWeight: 'bold', color: '#2C5F7E'}}>
-                  A12 - Piano Secondo
-                </p>
+                <p>A12 - Piano Secondo - 122 mq</p>
               </div>
             </div>
           </div>
         </section>
 
+        {/* Map Section */}
         <section className="map-section">
-          <h2>Posizione</h2>
-          <p style={{marginBottom: '1.5rem', color: '#666'}}>
-            Via Marzabotto, 7 - 20864 Agrate Brianza (MB) • Metro M2 a 5 minuti
+          <span className="label-category">LOCATION</span>
+          <h2 style={{textAlign: 'center', marginTop: '1rem'}}>Posizione Strategica</h2>
+          <p style={{textAlign: 'center', color: 'var(--text-gray)', marginBottom: '2rem', fontSize: '1.05rem'}}>
+            Via della Costituzione - 20864 Agrate Brianza (MB)
           </p>
+          
+          <div style={{background: 'var(--bg-light)', padding: '2rem', marginBottom: '2rem'}}>
+            <h3 style={{textAlign: 'center', marginBottom: '1.5rem', color: 'var(--teal-dark)'}}>
+              Collegamenti e Servizi
+            </h3>
+            <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem'}}>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2rem', marginBottom: '0.5rem'}}>🚇</div>
+                <p><strong>Metro M2</strong><br/>5 minuti</p>
+              </div>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2rem', marginBottom: '0.5rem'}}>🏢</div>
+                <p><strong>Centro Agrate</strong><br/>3 minuti</p>
+              </div>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2rem', marginBottom: '0.5rem'}}>🏪</div>
+                <p><strong>Supermercati</strong><br/>2 minuti</p>
+              </div>
+              <div style={{textAlign: 'center'}}>
+                <div style={{fontSize: '2rem', marginBottom: '0.5rem'}}>🏫</div>
+                <p><strong>Scuole</strong><br/>5 minuti</p>
+              </div>
+            </div>
+          </div>
+
           <div className="map-container">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.5!2d9.35!3d45.56!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDMzJzM2LjAiTiA5wrAyMScwMC4wIkU!5e0!3m2!1sit!2sit!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.5!2d9.35!3d45.56!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDMzJzM2LjAiTiA5wrAyMScwMC4wIkU!5e0!3m2!1sit!2sit!4v1234567890"
               width="100%"
               height="100%"
               style={{border: 0}}
@@ -237,17 +266,30 @@ function ExcelsiorLiving() {
           </div>
         </section>
 
+        {/* CTA Section */}
         <section className="cta-section">
           <h2>Interessato a Excelsior Living?</h2>
-          <p>Contattaci per maggiori informazioni, prezzi e per prenotare una visita</p>
-          <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '1.5rem'}}>
-            <a href="/contatti" className="cta-button">Contattaci</a>
-            <a href="mailto:agrate@smliving.it" className="cta-button">Invia Email</a>
+          <p>Contattaci per maggiori informazioni e per prenotare una visita</p>
+          <div style={{display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '1.5rem', flexWrap: 'wrap'}}>
+            <a href="/contatti" className="cta-button">CONTATTACI</a>
+            <a href="mailto:agrate@smliving.it" className="cta-button">INVIA EMAIL</a>
+            <a href="https://wa.me/393467854342" className="cta-button" style={{background: '#25D366'}}>WHATSAPP</a>
           </div>
         </section>
       </div>
+
+      {/* WhatsApp Float Button */}
+      <a 
+        href="https://wa.me/393467854342" 
+        className="whatsapp-float" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        aria-label="Contattaci su WhatsApp"
+      >
+        📱
+      </a>
     </div>
   );
 }
 
-export default ExcelsiorLiving;"Update Excelsior Living with new design"
+export default ExcelsiorLiving;"Update Excelsior with logo and new design"
